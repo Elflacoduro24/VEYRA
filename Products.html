@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEYRA - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Mínimos estilos adicionales necesarios */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            height: 200px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #faf5ff, #f3e8ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-content {
+            padding: 20px;
+        }
+
+        .product-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .product-price {
+            font-weight: bold;
+            font-size: 18px;
+            color: #6b46c1;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .product-footer {
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+            }
+
+            .product-footer .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame">
+        <!-- NAVBAR -->
+        <header class="nav">
+            <div class="brand">
+                <div class="logo">V</div>
+                <div>VEYRA</div>
+            </div>
+            <nav class="links" aria-label="Primary">
+                <a href="About-Us.html">About Us</a>
+                <a href="#">Explore seeds</a>
+                <a href="#">Community</a>
+                <a href="#" aria-current="page">Products</a>
+                <a href="#">Publications/Media</a>
+            </nav>
+            <div class="spacer"></div>
+            <div class="auth">
+                <a href="SignUp.html" class="btn" role="button">Sign Up</a>
+                <a href="login_page.html" class="btn primary" role="button">Login</a>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="stage">
+            <section class="card-wrap">
+                <h1>Explore Products Information</h1>
+
+                <!-- Product Filters -->
+                <div class="signup-card mb-3">
+                    <h2>Filters</h2>
+                    <div class="grid-3">
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select id="category">
+                                <option value="">All Categories</option>
+                                <option value="seeds">Jeans</option>
+                                <option value="tools">Shoes</option>
+                                <option value="fertilizers">Caps</option>
+                                <option value="fertilizers">Accesories</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="size">Size</label>
+                            <select id="size">
+                                <option value="">All Sizes</option>
+                                <option value="small">Xs</option>
+                                <option value="medium">S</option>
+                                <option value="large">M</option>
+                                <option value="large">L</option>
+                                <option value="large">XL</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <select id="location">
+                                <option value="">All Locations</option>
+                                <option value="north">North Region</option>
+                                <option value="south">South Region</option>
+                                <option value="east">East Region</option>
+                                <option value="west">West Region</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="submit-btn">Apply Filters</button>
+                </div>
+
+                <!-- Featured Products Section -->
+                <h2 class="mb-2">Featured Products</h2>
+
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <div class="ph">⌚</div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Aenean egestas</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi morbi sit consectetur
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">$24.99</span>
+                                <button class="btn primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <div class="ph">👖</div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Aenean egestas</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi morbi sit consectetur
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">$49.99</span>
+                                <button class="btn primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <div class="image-placeholder">
+                                <div class="ph">👕</div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Aenean egestas</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi morbi sit consectetur
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">$19.99</span>
+                                <button class="btn primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Show All Button -->
+                <div class="text-center mt-3">
+                    <button class="btn">Show All Products</button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
