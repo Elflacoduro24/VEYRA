@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VEYRA – Sign up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="frame">
+    <header class="nav">
+      <div class="brand">
+        <div class="logo">V</div>
+        <div>VEYRA</div>
+      </div>
+      <nav class="links" aria-label="Primary">
+        <a href="#">About Us</a>
+        <a href="#">Explore seeds</a>
+        <a href="#">Community</a>
+        <a href="#">Products</a>
+        <a href="#">Publications/Media</a>
+      </nav>
+      <div class="spacer"></div>
+      <div class="auth">
+        <button class="btn">Sign Up</button>
+        <a href="login_page.html" class="btn primary">Log In</a>
+      </div>
+    </header>
+
+    <main class="stage">
+      <section class="card-wrap">
+        <h1>Sign up</h1>
+        <div class="signup-card">
+          <form action="#" method="post" autocomplete="on">
+            <div>
+              <label for="role">Select Role</label>
+              <select id="role" name="role">
+                <option value="">Search Role</option>
+                <option>Costumer</option>
+                <option>Influencer</option>
+                <option>Event Coordinator</option>
+                <option>Photographer o Videographer</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="grid-2">
+              <div>
+                <label for="fname">First name</label>
+                <input id="fname" name="first_name" type="text" placeholder="First name" required>
+              </div>
+              <div>
+                <label for="lname">Last Name</label>
+                <input id="lname" name="last_name" type="text" placeholder="Last Name" required>
+              </div>
+            </div>
+
+            <div>
+              <label for="email">Email id</label>
+              <input id="email" name="email" type="email" placeholder="Enter email id" required>
+            </div>
+
+            <div>
+              <label for="address">Address</label>
+              <input id="address" name="address" type="text" placeholder="Search your address">
+            </div>
+
+            <div>
+              <label for="password">Passwords</label>
+              <input id="password" name="password" type="password" placeholder="Search Role" required>
+            </div>
+
+            <div>
+              <label for="confirm">confirm passwords</label>
+              <input id="confirm" name="confirm_password" type="password" placeholder="Search Role" required>
+            </div>
+
+            <button class="submit-btn" type="submit">Sign up</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VEYRA – Log In</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="frame">
+    <!-- NAVBAR -->
+    <header class="nav">
+      <div class="brand">
+        <div class="logo">V</div>
+        <div>VEYRA</div>
+      </div>
+      <nav class="links" aria-label="Primary">
+        <a href="#">About Us</a>
+        <a href="#">Explore seeds</a>
+        <a href="#">Community</a>
+        <a href="#">Products</a>
+        <a href="#">Publications/Media</a>
+      </nav>
+      <div class="spacer"></div>
+      <div class="auth">
+        <a href="SignUp.html" class="btn">Sign Up</a>
+        <button class="btn primary">Log In</button>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="stage">
+      <section class="card-wrap">
+        <h1>Log In</h1>
+        <div class="signup-card">
+          <form action="#" method="post" autocomplete="on">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input id="email" type="email" name="email" placeholder="Enter your email address" required />
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password</label>
+              <input id="pwd" type="password" name="password" placeholder="Enter your password" required />
+            </div>
+            <div class="forgot">Forgot password?</div>
+            <button class="submit-btn" type="submit">Login</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    // Simple form handling
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.querySelector('form');
+      const submitBtn = document.querySelector('.submit-btn');
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Simple success message
+        submitBtn.textContent = 'Login Successful!';
+        submitBtn.style.background = '#10b981';
+        
+        // Reset after 2 seconds
+        setTimeout(() => {
+          submitBtn.textContent = 'Login';
+          submitBtn.style.background = '';
+        }, 2000);
+      });
+    });
+  </script>
+</body>
+</html>
