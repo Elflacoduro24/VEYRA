@@ -3,11 +3,11 @@
 ## 👥 **Equipo del Proyecto**
 
 **Desarrollador:** Sebastián  
-- **Rama:** `About-us, Login, SignUp` (ramas personales de desarrollo)  
+- **Ramas:** `About-us, Login, SignUp` (ramas personales de desarrollo)  
 - **Responsabilidades:** Desarrollo del frontend, CSS personalizado, accesibilidad
 
 **Desarrollador:** Juan Romero  
-- **Rama:** `Explore-seeds, Products` (ramas personales de desarrollo)  
+- **Ramas:** `Explore-seeds, Products` (ramas personales de desarrollo)  
 - **Responsabilidades:** Desarrollo del frontend, CSS personalizado  
 
 ## 🎯 **Criterios de Aceptación Cumplidos**
