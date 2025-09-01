@@ -91,3 +91,4 @@ El CSS incluye un media query básico para:
 - ✅ Sin dependencias externas
 - ✅ Fácil de modificar
 - ✅ Estructura clara y organizada
+- ✅ Navegación entre páginas funcional
