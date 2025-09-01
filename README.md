@@ -2,9 +2,13 @@
 
 ## 👥 **Equipo del Proyecto**
 
-**Desarrollador Principal:** Sebastián (Usuario actual)
-- **Rama:** `main` (rama compartida común)
-- **Responsabilidades:** Desarrollo completo del frontend, CSS personalizado, accesibilidad
+**Desarrollador:** Sebastián  
+- **Ramas:** `About-us, Login, SignUp` (ramas personales de desarrollo)  
+- **Responsabilidades:** Desarrollo del frontend, CSS personalizado, accesibilidad
+
+**Desarrollador:** Juan Romero  
+- **Ramas:** `Explore-seeds, Products` (ramas personales de desarrollo)  
+- **Responsabilidades:** Desarrollo del frontend, CSS personalizado  
 
 ## 🎯 **Criterios de Aceptación Cumplidos**
 
