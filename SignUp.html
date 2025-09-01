@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VEYRA – Sign up</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="frame">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sign up for VEYRA - Join our sustainable fashion community and explore opportunities as customer, influencer, event coordinator, or photographer" />
+    <meta name="keywords" content="VEYRA signup, sustainable fashion, community, influencer, event coordinator, photographer" />
+    <meta name="author" content="VEYRA Team" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Sign Up - VEYRA Sustainable Fashion" />
+    <meta property="og:description" content="Join VEYRA's sustainable fashion community" />
+    <meta property="og:type" content="website" />
+    <title>VEYRA – Sign up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="SignUp.html" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="frame">
     <header class="nav">
-      <div class="brand">
-        <div class="logo">V</div>
-        <div>VEYRA</div>
-      </div>
-      <nav class="links" aria-label="Primary">
-        <a href="#">About Us</a>
-        <a href="#">Explore seeds</a>
-        <a href="#">Community</a>
-        <a href="#">Products</a>
-        <a href="#">Publications/Media</a>
-      </nav>
+             <div class="brand">
+         <div class="logo">V</div>
+       </div>
+             <nav class="links" aria-label="Primary">
+         <a href="About-Us.html">About Us</a>
+         <a href="#">Explore seeds</a>
+         <a href="#">Community</a>
+         <a href="#">Products</a>
+         <a href="#">Publications/Media</a>
+       </nav>
       <div class="spacer"></div>
       <div class="auth">
         <button class="btn">Sign Up</button>
@@ -30,7 +35,7 @@
       </div>
     </header>
 
-    <main class="stage">
+         <main class="stage" id="main-content">
       <section class="card-wrap">
         <h1>Sign up</h1>
         <div class="signup-card">
@@ -82,7 +87,23 @@
           </form>
         </div>
       </section>
-    </main>
-  </div>
-</body>
+         </main>
+   </div>
+
+   <script>
+     // Marcar el enlace "About Us" como activo cuando se navegue a él
+     document.addEventListener('DOMContentLoaded', function() {
+       const aboutUsLink = document.querySelector('a[href="About-Us.html"]');
+       if (aboutUsLink) {
+         aboutUsLink.addEventListener('click', function() {
+           // Opcional: agregar clase temporal para feedback visual
+           this.style.transform = 'scale(1.05)';
+           setTimeout(() => {
+             this.style.transform = '';
+           }, 200);
+         });
+       }
+     });
+   </script>
+ </body>
 </html>
